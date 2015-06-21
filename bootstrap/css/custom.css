@@ -1,0 +1,65 @@
+/* Sticky footer styles */
+html {
+    /* next two for sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 20px;
+}
+.stickyfooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top:15px;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  font-size:13px;
+}
+
+div.hot {
+	/* modified from alert-danger */
+	background-color: #FF5C5C;
+	border:2px solid #CA0C0C;
+}
+
+div.cold {
+	/* modified from alert-info */
+	background-color: #0BBFE4;
+	border:2px solid #1057F2;
+}
+div.hint {
+	color:black;
+	padding: 8px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+.hidden {
+	display:none;
+}
+
+
+input#theguess {
+	margin-top:15px;
+	margin-bottom:25px;
+}
+
+.btn-guess {
+	color: #333;
+	color: black;
+	background-color: #E587D2;
+	border-color: #ccc;
+ }
+
+.jumbotron .btn-other {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+}
+
+div.jumbotron {
+	background-color:#8DF5B2;
+}
