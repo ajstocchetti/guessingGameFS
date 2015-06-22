@@ -31,11 +31,15 @@
 		<div class="jumbotron">
 			<h1>Guess That Number!</h1>
 			<input type="number" id="theguess">
-			<div class="hot hint hidden" role="alert" id="hot"></div>
-			<div class="cold hint hidden" role="alert" id="cold"></div>
-			<p><a class="btn btn-lg btn-guess" href="#" role="button">Am I right?</a></p>
-			<a class="btn-other btn btn-info" href="#" role="button">I need a hint</a>
-			<a class="btn-other btn btn-info" href="#" role="button">Do it again!</a>
+			<br><span id="notification"></span><br>
+			<button id="submitguess" class="btn btn-lg btn-guess" disabled>Am I right?</button>
+			<!--
+			<p><a id="submitguess" class="btn btn-lg btn-guess" href="#" role="button">Am I right?</a></p>
+			-->
+			<div id="correct"></div>
+			
+			<a id="showHint" class="btn-other btn btn-info" href="#" role="button">I need a hint</a>
+			<a id="reset" 	 class="btn-other btn btn-info" href="#" role="button">Do it again!</a>
 		</div>
 		<div>
 			<p>So here's the deal: I'm thinking of a number between 1 and 100 (inclusive). You have four guesses to figure out what that number is. But, because I'm nice, I'll let you know if you're hot or cold. You ready? Then Guess That Number!</p>
@@ -57,6 +61,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
   </body>

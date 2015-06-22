@@ -36,14 +36,11 @@ div.hint {
 	margin-bottom: 20px;
 	border-radius: 4px;
 }
-.hidden {
-	display:none;
-}
 
 
 input#theguess {
 	margin-top:15px;
-	margin-bottom:25px;
+	margin-bottom:5px;
 }
 
 .btn-guess {
@@ -51,6 +48,8 @@ input#theguess {
 	color: black;
 	background-color: #E587D2;
 	border-color: #ccc;
+	margin-top:5px;
+	margin-bottom:25px;
  }
 
 .jumbotron .btn-other {
